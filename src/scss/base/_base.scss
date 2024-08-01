@@ -17,5 +17,9 @@ img {
 
 a {
 	color: $base-white;
+	transition: all ease-in .3s;
+	&:hover {
+		color: $base-blue;
+	}
 }
 
