@@ -2,7 +2,7 @@
 	padding: 30px 0;
 	display: flex;
 	column-gap: 10px;
-}
+	}
 
 .icon {
 	fill: $base-white;
@@ -10,6 +10,8 @@
 	width: 40px;
 	height: 40px;
 	transition: all ease-in .3s;
+	border: 1px red solid;
+	stroke-opacity: 0;
 	&:hover {
 				stroke: $base-blue;
 		fill: $base-blue;
