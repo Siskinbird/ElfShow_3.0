@@ -7,10 +7,9 @@
 .icon {
 	fill: $base-white;
 	stroke: transparent;
-	width: 40px;
-	height: 40px;
+	max-width: 40px;
+	height: auto;
 	transition: all ease-in .3s;
-	border: 1px red solid;
 	stroke-opacity: 0;
 	&:hover {
 				stroke: $base-blue;
