@@ -15,6 +15,8 @@ img {
 }
 
 a {
+	font-family: $primary-font;
+	text-decoration: none;
 	color: $base-white;
 	transition: all ease-in .3s;
 	&:hover {
@@ -23,4 +25,13 @@ a {
 }
 .separator {
 	padding: 100 0;
+}
+.nav-pr-30 {
+	padding-right: 30px;
+}
+.nav-pl-30 {
+	padding-left: 30px;
+}
+.nav-pm-30 {
+	padding: 0 30px;
 }
