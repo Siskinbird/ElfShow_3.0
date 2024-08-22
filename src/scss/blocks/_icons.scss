@@ -1,5 +1,4 @@
 .icons-wrapper {
-	padding-left: 30px;
 	display: flex;
 	column-gap: 10px;
 	}
@@ -12,7 +11,7 @@
 	transition: all ease-in .3s;
 	stroke-opacity: 0;
 	&:hover {
-				stroke: $base-blue;
+		stroke: $base-blue;
 		fill: $base-blue;
 	}
 }
