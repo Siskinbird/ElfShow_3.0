@@ -1,16 +1,12 @@
 .hero {
     background: url("/img/hero.png") 0 0/cover no-repeat;
-   
-    &-inner {
-        padding-left: -12px;
-        padding-right: -12px;
 
+    &-inner {
         &-content {
             margin-top: 177px;
             margin-bottom: 268px;
             padding-left: 40px;
 
         }
-        
     }
 }
