@@ -1,6 +1,10 @@
 .icons-wrapper {
 	display: flex;
 	column-gap: 10px;
+	@media (min-width: 769px) and (max-width: 823px) {
+		margin-right: 40px;
+	 }
+
 	}
 
 .icon {
@@ -14,6 +18,9 @@
 		stroke: $base-blue;
 		fill: $base-blue;
 	}
+	@include media-breakpoint-down(md) {
+		display: none;
+	 }
 }
 	
 

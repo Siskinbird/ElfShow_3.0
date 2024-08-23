@@ -1,12 +1,43 @@
 .hero {
     background: url("/img/hero.png") 0 0/cover no-repeat;
-
     &-inner {
         &-content {
             margin-top: 177px;
             margin-bottom: 268px;
             padding-left: 40px;
+            @include media-breakpoint-down(md) {
+                margin-top: 20px;
+                margin-bottom: 10px;
+                padding-left: 0;
+                padding-right: 0;
+            }
 
         }
     }
+    @include media-breakpoint-down(md) {
+        background: url("/img/hero_mobile.png") 0 0/cover no-repeat;
+    }
+
+}
+
+.hero-title {
+    @include media-breakpoint-down(md) { 
+        text-align: center;
+        font-size: 50px;
+    }
+}
+.hero-subtitle {
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        font-size: 20px;
+	}
+}
+.make {
+
+           @include media-breakpoint-down(md) {
+        margin-top: 250px;
+        text-align: center;
+        font-size: 16px;
+    } 
+
 }
