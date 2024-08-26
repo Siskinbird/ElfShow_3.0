@@ -1,0 +1,69 @@
+.services {
+    margin-top: 200px;
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media-breakpoint-down(md) {
+           margin-right: 20px;
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+    &-img {
+        width: fit-content;
+    }
+    img {
+        @include media-breakpoint-down(md) {
+            width: 96%;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 0;
+    }
+}
+
+// BUTTON
+
+.btn-box {
+    margin-top: 60px;
+    
+}
+
+.services-btn {
+    width: 444px;
+    height: 68px;  
+
+    background-color: $base-pink;    
+    border: 1px solid $base-pink;
+    border-radius: 10px;   
+
+    transition: all .3s ease-in-out;
+
+    @include media-breakpoint-down(md) {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+    }
+    span {
+        color: $base-white;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+    }
+    &:hover {
+        background-color: #F1DFF6;
+        span {
+            color: $base-blue;
+        
+    }
+ 
+}  
+}
