@@ -1,0 +1,25 @@
+.programs {
+    margin-top: 200px;
+    &-item{
+       margin-right: 10px;
+       &:last-child {
+        margin-left: 0;
+       }
+        &_main {
+        width: 555px;
+        height: 630px;
+        border: 1px solid $base-pink;
+        border-radius: 30px;
+        }
+    }    
+}
+
+.main-inner {
+    padding-left: 50px;
+    padding-right: 144px;
+    margin-top: 50px;
+}
+
+.programs-item:nth-child(1) .programs-item_main {
+        background: url('../../img/programs/11.png')  0 0/cover no-repeat;;
+}
