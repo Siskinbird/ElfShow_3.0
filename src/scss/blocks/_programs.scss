@@ -2,24 +2,107 @@
     margin-top: 200px;
     &-item{
        margin-right: 10px;
+       margin-bottom: 80px;
        &:last-child {
         margin-left: 0;
+        //margin-bottom: 0;
        }
         &_main {
+        //box-shadow: 0px 0px 53px 19px rgba(81, 27, 97, 0.11) inset;
         width: 555px;
         height: 630px;
         border: 1px solid $base-pink;
         border-radius: 30px;
         }
-    }    
+        @include media-breakpoint-down(lg) {
+            margin-right: 0;
+         }
+    } 
+    @include media-breakpoint-down(md) {
+        display: none;
+    }   
+}
+
+.programs-title {
+    h2 {
+        font-size: 120px;
+        font-family: $logo-font;
+        color: $base-blue;
+        opacity: 0.5;
+    }
+}
+.programs-subtitle {
+    margin-bottom: 60px;
+    padding-left: 90px;
+    h4 {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    svg {
+        fill: $base-blue;
+        margin-left: 30px;
+    }
 }
 
 .main-inner {
     padding-left: 50px;
     padding-right: 144px;
     margin-top: 50px;
+    font-size: 24px;
+    h3 {
+        margin-bottom: 0;
+    }
+    svg {
+        cursor: pointer;
+        stroke-opacity: 1;
+        fill: none;
+        stroke: #ffffff;
+        &:hover {
+            fill: none;
+        }
+    }
+
 }
+
+// ITEMS-BG
 
 .programs-item:nth-child(1) .programs-item_main {
         background: url('../../img/programs/11.png')  0 0/cover no-repeat;;
+}
+
+.programs-item:nth-child(2) .programs-item_main {
+    background: url('../../img/programs/22.png')  0 0/cover no-repeat;;
+}
+
+.programs-item:nth-child(3) .programs-item_main {
+    background: url('../../img/programs/33.png')  0 0/cover no-repeat;;
+}
+
+.programs-item:nth-child(4) .programs-item_main {
+background: url('../../img/programs/44.png')  0 0/cover no-repeat;;
+}
+
+.programs-item:nth-child(5) .programs-item_main {
+    background: url('../../img/programs/55.png')  0 0/cover no-repeat;;
+}
+
+.programs-item:nth-child(6) .programs-item_main {
+background: url('../../img/programs/66.png')  0 0/cover no-repeat;;
+}
+
+// DESCRIPTION
+.programs-item_description {
+    margin-top: 40px;
+    padding: 10px 20px;
+    width: 555px;
+    height: 78px;
+    border: 1px solid $base-pink;
+    border-radius: 15px;
+    p{
+        font-weight: bold;
+    }
+    span {
+        font-weight: lighter;
+        opacity: 0.5;
+    }
 }

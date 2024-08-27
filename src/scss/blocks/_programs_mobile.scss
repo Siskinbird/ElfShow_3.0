@@ -1,0 +1,107 @@
+.title-mobile {
+    h2 {
+        font-size: 50px;
+        font-family: $logo-font;
+        color: $base-blue;
+        opacity: 0.8;
+        margin-bottom: 0;
+    }
+}
+.subtitle-pstar {
+    svg {
+        width: 14px;
+        height: 14px;
+        fill: $base-blue;
+    }
+}
+.subtitle-mobile {
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+}
+
+// CARDS
+.card-item {
+    margin-right: 10px;
+    margin-bottom: 30px;    
+}
+
+.card-item_main {
+    width: 240px;
+    height: 213px;
+    border: 1px solid $base-pink;
+    border-radius: 30px;  
+    margin-bottom: 10px;
+    h3 {
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-left: 20px;
+    }
+    &-button {
+       margin-left: 20px;
+       svg {
+        cursor: pointer;
+        stroke-opacity: 1;
+        fill: none;
+        stroke: #ffffff;
+        &:hover {
+            fill: none;
+        }
+    } 
+    }  
+}
+
+
+.card-inner {
+    margin-top: 10px;
+}
+
+.card-item_description {
+    width: 240px;
+    height: 78px;
+    border: 1px solid $base-pink;
+    border-radius: 15px;
+    &-title {
+        p {
+            line-height: 117%;
+            margin-bottom: 0;
+            font-size: 14px;
+            padding: 10px;
+        }
+    } 
+    &-subtitle {
+        span {
+            line-height: 100%;
+            font-size: 14px;
+            font-weight: 100;
+            opacity: 0.5;
+            padding: 0 10px 10px 10px;
+        }
+    }       
+}
+
+// BACKGROUNDS
+
+.card-item:nth-child(1) .card-item_main {
+    background: url('../../img/programs/programs-mobile/1.png')  0 0/cover no-repeat;;
+}
+
+.card-item:nth-child(2) .card-item_main {
+    background: url('../../img/programs/programs-mobile/2.png')  0 0/cover no-repeat;;
+}
+
+.card-item:nth-child(3) .card-item_main {
+    background: url('../../img/programs/programs-mobile/3.png')  0 0/cover no-repeat;;
+}
+
+.card-item:nth-child(4) .card-item_main {
+    background: url('../../img/programs/programs-mobile/4.png')  0 0/cover no-repeat;;
+}
+
+.card-item:nth-child(5) .card-item_main {
+    background: url('../../img/programs/programs-mobile/5.png')  0 0/cover no-repeat;;
+}
+
+.card-item:nth-child(6) .card-item_main {
+    background: url('../../img/programs/programs-mobile/6.png')  0 0/cover no-repeat;;
+}
