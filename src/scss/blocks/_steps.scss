@@ -18,6 +18,7 @@
 }
 
 .steps-item {
+    position: relative;
     width: 216px;
     height: 123px;
     border: 1px solid #fff;
@@ -31,7 +32,7 @@
         width: 240px;
         height: 53px;
         margin-right: 0;
-        flex: flex-wrap;
+        //flex: flex-wrap;
     }
 
 }
@@ -45,6 +46,8 @@
 .num {
     margin-bottom: 0;
     font-size: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
     @include media-breakpoint-down(md) {
         font-size: 20px;
         padding-left: 10px;
@@ -94,4 +97,55 @@
     @include media-breakpoint-down(md) {
         margin-top: 10px;
     }
+}
+
+
+// BUTTON
+
+
+.steps-btn {
+    width: 444px;
+    height: 68px;  
+
+    background-color: $base-pink;    
+    border: 1px solid $base-pink;
+    border-radius: 10px;   
+
+    transition: all .3s ease-in-out;
+
+    @include media-breakpoint-down(md) {
+    width: 240px;
+    height: 40px;
+    font-size: 12px;
+    
+    }
+    span {
+        color: $base-white;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+    }
+    &:hover {
+        background-color: #F1DFF6;
+        span {
+            color: $base-blue;
+        }
+    }
+    &-box {
+        margin-top: 60px;
+        @include media-breakpoint-down(md) {
+        margin-top: 20px;  
+        }
+    }
+}  
+
+.download-mob {
+    margin-top: 24px;
+    opacity: 0.5;
+}
+
+.download-desc {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    opacity: 0.5;
 }
