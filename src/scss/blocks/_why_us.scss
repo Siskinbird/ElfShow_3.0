@@ -1,0 +1,36 @@
+.whyus-subtitle {  
+    h4 {
+       margin-bottom: 60px;
+       padding-left: 90px;
+       margin-bottom: 0;
+       font-size: 40px;
+       @include media-breakpoint-down(md) {
+           font-size: 20px;
+           padding-left: 0;
+           text-align: center;
+       }
+   }
+   svg {
+       fill: $base-blue;
+       margin-left: 30px;
+   }
+
+}
+.mt200-mb60 {
+    margin-top: 200px;
+    margin-bottom: 60px;
+    // @include media-breakpoint-down(md) {
+    //     margin-top: 0;
+    //     margin-bottom: 20px;
+    // }
+}
+
+li {
+    list-style: none;
+}
+
+.whyus-back {
+    margin-top: 28px;
+    height: 228px;
+    background: url("/img/circle_desc.png") 50%/contain no-repeat;
+}
