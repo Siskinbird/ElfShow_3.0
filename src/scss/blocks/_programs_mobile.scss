@@ -80,6 +80,11 @@
     }       
 }
 
+.card-item:nth-child(5) .card-item_main-title{
+    h3 {
+        padding-left: 50px;
+    }
+}
 // BACKGROUNDS
 
 .card-item:nth-child(1) .card-item_main {
