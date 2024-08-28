@@ -34,3 +34,25 @@ li {
     height: 228px;
     background: url("/img/circle_desc.png") 50%/contain no-repeat;
 }
+
+// MOBILE
+
+.whyus-mobile {
+    width: 240px;
+    height: 322px;
+    background: url("/img/circle_mob.png") 50%/contain no-repeat;
+    &_title {
+        font-size: 20px;
+        margin-bottom: 20px;
+
+    }
+    &_list {
+        font-size: 14px;
+        padding-left: 0;        
+        li {
+            text-transform: uppercase;
+            margin-top: 10px;
+            line-height: 134%;
+        }
+    }
+}
