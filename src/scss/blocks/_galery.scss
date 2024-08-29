@@ -1,0 +1,17 @@
+.mt-200mb-40 {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(md) {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+.galery-swiper {
+    margin-top: 40px;
+}
+.slide-340 {
+    width: 340px !important;
+}
+.slide-166 {
+    width: 166px !important;
+}
