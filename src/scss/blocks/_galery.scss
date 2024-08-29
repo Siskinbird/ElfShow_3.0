@@ -15,3 +15,11 @@
 .slide-166 {
     width: 166px !important;
 }
+.last-star {
+    margin: 80px auto;
+    width: 40px;
+    height: 40px;
+    svg {
+        fill: $base-blue;
+    }
+}
