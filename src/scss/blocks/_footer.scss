@@ -81,7 +81,13 @@
 	font-size: 16px;
 	li {
 		a {
+			font-family: $primary-font;
 			text-decoration: none;
+			color: $base-white;
+			transition: all ease-in .3s;
+			&:hover {
+				color: $base-blue;
+			}
 		}
 		padding-top: 24px;
 		@include media-breakpoint-down(lg) {

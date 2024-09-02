@@ -1,786 +1,919 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="theme-color" content="#317EFB" />
+		<meta name="description" content="Профессиональные артисты украсят ваш праздник своим оригинальным выступлением в сказочных костюмах" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="yandex-verification" content="f7a22a3120414135" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Эльфийское шоу." />
+		<meta property="og:description" content=" Танцевальные номера для вашего праздника. С нами возможно Волшебство." />
+		<meta property="og:url" content="https://elfshow.ru/" />
+		<meta property="og:image" content="https://elfshow.ru/assets/img/link.jpg" />
+		<meta property="og:site_name" content="Elfshow" />
+		<meta property="og:locale" content="ru_Ru" />
+		<link rel="stylesheet" href="./css/main.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#317EFB" />
-    <meta
-      name="description"
-      content="Профессиональные артисты украсят ваш праздник своим оригинальным выступлением в сказочных костюмах"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="yandex-verification" content="f7a22a3120414135" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Эльфийское шоу." />
-    <meta
-      property="og:description"
-      content=" Танцевальные номера для вашего праздника. С нами возможно Волшебство."
-    />
-    <meta property="og:url" content="https://elfshow.ru/" />
-    <meta
-      property="og:image"
-      content="https://elfshow.ru/assets/img/link.jpg"
-    />
-    <meta property="og:site_name" content="Elfshow" />
-    <meta property="og:locale" content="ru_Ru" />
-    <link rel="stylesheet" href="./css/main.css" />
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
 
-    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-</head>
+	<body>
+		<header class="header container">
+			<div class="header_inner d-flex justify-content-md-between justify-content-start">
+				<nav class="navigation">
+					<ul class="navigation-links d-flex align-items-center justify-content-between">
+						<li class="navigation-link"><a href="#services">Мероприятия</a></li>
+						<li class="navigation-link"><a href="#programs">Программы и&#160;персонажи</a></li>
+						<li class="logo">
+							<a href="#home"
+								><picture>
+									<source srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" type="image/png" />
+									<img src="./img/logo.png" alt="Logo" /> </picture
+							></a>
+						</li>
+						<li class="navigation-link"><a href="#footer">Сотрудничество</a></li>
+						<li class="navigation-link"><a href="#galery">Галерея</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-logo">
+					<picture>
+						<source srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" type="image/png" />
+						<img src="./img/logo.png" alt="Logo" />
+					</picture>
+				</div>
+				<div class="icons-wrapper d-none d-md-flex align-items-center">
+					<a href="https://facebook.com" target="_blank">
+						<svg class="icon icon--instagram">
+							<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+						</svg>
+					</a>
+					<a href="https://facebook.com" target="_blank">
+						<svg class="icon icon--whatsup">
+							<use href="./img/svgsprite/sprite.symbol.svg#whatsup"></use>
+						</svg>
+					</a>
+					<a href="https://facebook.com" target="_blank">
+						<svg class="icon icon--telegram">
+							<use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
+						</svg>
+					</a>
+				</div>
+				<nav class="header__nav nav-bar" onclick="mobileNav()">
+					<div class="toggle-menu">
+						<div class="line line1"></div>
+						<div class="line line2"></div>
+						<div class="line line3"></div>
+					</div>
+					<div class="toggle-menu__inner">
+						<div class="menu-logo">
+							<picture>
+								<source srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" type="image/png" />
+								<img src="./img/logo.png" alt="Logo" />
+							</picture>
+						</div>
+						<ul class="nav-list">
+							<li class="nav-list-item"><a href="" class="nav-link">Мероприятия</a></li>
+							<li class="nav-list-item"><a href="" class="nav-link">Программы и&#160;персонажи</a></li>
+							<li class="nav-list-item"><a href="" class="nav-link">Сотрудничество</a></li>
+							<li class="nav-list-item"><a href="" class="nav-link">Галерея</a></li>
+							<li>Москва</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-<body>
-    <header class="header container">
-    <div class="header_inner d-flex justify-content-md-between justify-content-start">
-        <nav class="navigation">
-            <ul class="navigation-links d-flex align-items-center justify-content-between">
-                <li class="navigation-link"><a href="#link1">Мероприятия</a></li>
-                <li class="navigation-link"><a href="#link2">Программы и&#160;персонажи</a></li>
-                <li class="logo"><a href="#home"><img src="./img/logo.png" alt="Logo"></a></li>
-                <li class="navigation-link"><a href="#link3">Сотрудничество</a></li>
-                <li class="navigation-link"><a href="#link4">Галерея</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-logo">
-            <img src="./img/logo.png" alt="Logo">
-        </div>
-        <div class="icons-wrapper d-none d-md-flex align-items-center">
-            <a href="https://facebook.com" target="_blank">
-                <svg class="icon icon--instagram">
-                 <use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
-                </svg>
-            </a>
-            <a href="https://facebook.com" target="_blank">
-                <svg class="icon icon--whatsup">
-                 <use href="./img/svgsprite/sprite.symbol.svg#whatsup"></use>
-                </svg>
-            </a>
-            <a href="https://facebook.com" target="_blank">
-                <svg class="icon icon--telegram">
-                 <use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
-                </svg>
-            </a>
-        </div>
-                 <nav class="header__nav nav-bar" onclick="mobileNav()">
-            <div class="toggle-menu">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
-            </div>
-            <div class="toggle-menu__inner">
-                <div class="menu-logo">
-                    <img src="./img/logo.png" alt="Logo">
-                </div>
-                <ul class="nav-list">
-                     <li class="nav-list-item"><a href="" class="nav-link">Мероприятия</a></li>
-                    <li class="nav-list-item"><a href="" class="nav-link">Программы и&#160;персонажи</a></li>
-                    <li class="nav-list-item"><a href="" class="nav-link">Сотрудничество</a></li>
-                    <li class="nav-list-item"><a href="" class="nav-link">Галерея</a></li>
-                    <li>Москва</li>
-                </ul>
-            </div>
+		<main class="main">
+			<div class="hero">
+				<div class="hero-inner d-flex flex-column justify-content-center">
+					<div class="hero-inner-content container">
+						<h1 class="hero-title">ELFShow</h1>
+						<div class="hero-description">
+							<h2 class="hero-subtitle">Световое танцевальное шоу</h2>
+							<h3 class="make mt-4">Сделай свой праздник ярче вместе с&#160;нами!</h3>
+						</div>
+						<div class="hero-btns d-flex align-items-center justify-content-center justify-content-md-start">
+							<a href="#" class="hero-btns_show d-flex align-items-center justify-content-center">
+								<div class="hero-btns_show-inner d-flex align-items-center">
+									<svg class="icon icon--play">
+										<use href="./img/svgsprite/sprite.symbol.svg#play"></use>
+									</svg>
+									<span>шоурил</span>
+								</div>
+							</a>
+							<a href="#footer" class="hero-btns_request d-flex align-items-center justify-content-center">
+								<span>оставить заявку</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        </nav>
-    </div>
-    </div>
-</header>
+			<section id="services" class="services">
+				<div class="services-box container">
+					<div class="services-items d-none d-md-flex align-items-center justify-content-center justify-content-xl-between flex-wrap">
+						<div class="services-item">
+							<div class="services-title">Встреча гостей</div>
+							<div class="services-img">
+								<picture>
+									<source srcset="./img/services/1.webp 1x, ./img/services/1@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/1.png 1x, ./img/services/1@2x.png 2x" type="image/png" />
+									<img src="./img/services/1.png" alt="Встреча гостей" />
+								</picture>
+							</div>
+						</div>
 
-    <main class="main">
+						<div class="services-item">
+							<div class="services-title">Корпоративы</div>
+							<div class="services-img">
+								<picture>
+									<source srcset="./img/services/2.webp 1x, ./img/services/2@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/2.png 1x, ./img/services/2@2x.png 2x" type="image/png" />
+									<img src="./img/services/2.png" alt="Корпоративы" />
+								</picture>
+							</div>
+						</div>
 
-    <div class="hero">
-        <div class="hero-inner d-flex flex-column justify-content-center">
-            <div class="hero-inner-content container">
-            <h1 class="hero-title">ELFShow</h1>
-            <div class="hero-description">
-                <h2 class="hero-subtitle">Световое танцевальное шоу</h2>
-                <h3 class="make">Сделай свой праздник ярче вместе с&#160;нами!</h3>
-            </div>
-            <div class="hero-btns d-flex align-items-center justify-content-center justify-content-md-start">
-                <a href="#" class="hero-btns_show d-flex align-items-center justify-content-center">
-                    <div class="hero-btns_show-inner d-flex align-items-center">
-                        <svg class="icon icon--play">
-                            <use href="./img/svgsprite/sprite.symbol.svg#play"></use>
-                           </svg>
-                        <span>шоурил</span>
-                    </div>
-                </a>
-                <a href="#" class="hero-btns_request d-flex align-items-center justify-content-center">
-                    <span>оставить заявку</span>
-                </a>
-            </div>
-        </div>
-       </div>
-    </div>
+						<div class="services-item">
+							<div class="services-title">Детские праздники</div>
+							<div class="services-img">
+								<picture>
+									<source srcset="./img/services/3.webp 1x, ./img/services/3@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/3.png 1x, ./img/services/3@2x.png 2x" type="image/png" />
+									<img src="./img/services/3.png" alt="Детские праздники" />
+								</picture>
+							</div>
+						</div>
 
-    <section class="services">
-    <div class="services-box container">
-        <div class="services-items d-none d-md-flex align-items-center justify-content-center justify-content-xl-between flex-wrap">
+						<div class="services-item">
+							<div class="services-title">Дни рождения</div>
+							<div class="services-img">
+								<picture>
+									<source srcset="./img/services/4.webp 1x, ./img/services/4@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/4.png 1x, ./img/services/4@2x.png 2x" type="image/png" />
+									<img src="./img/services/4.png" alt="Дни рождения" />
+								</picture>
+							</div>
+						</div>
 
-            <div class="services-item">
-                <div class="services-title">Встреча гостей</div>
-                <div class="services-img">
-                    <img src="./img/services/1.png" alt="Встреча гостей">
-                </div>
-            </div>
+						<div class="services-item">
+							<div class="services-title">Шоу на&#160;сцене</div>
+							<div class="services-img">
+								<picture>
+									<source srcset="./img/services/5.webp 1x, ./img/services/5@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/services/5.png 1x, ./img/services/5@2x.png 2x" type="image/png" />
+									<img src="./img/services/5.png" alt="Шоу на сцене" />
+								</picture>
+							</div>
+						</div>
+					</div>
 
-            <div class="services-item">
-                <div class="services-title">Корпоративы</div>
-                <div class="services-img">
-                    <img src="./img/services/2.png" alt="Корпоративы">
-                </div>
-            </div>
+					<!-- SWIPER -->
 
-            <div class="services-item">
-                <div class="services-title">Детские праздники</div>
-                <div class="services-img">
-                    <img src="./img/services/3.png" alt="Детские праздники">
-                </div>
-            </div>
+					<div class="d-md-none d-flex align-items-center justify-content-center">
+						<div class="mob-separator">
+							<svg class="icon icon--star">
+								<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+							</svg>
+						</div>
+					</div>
+					<swiper-container slides-per-view="auto" loop="true" class="d-md-none d-flex">
+						<swiper-slide class="slide-134">
+							<div class="services-item">
+								<div class="services-title">Встреча гостей</div>
+								<div class="services-img">
+									<picture>
+										<source srcset="./img/services/1.webp 1x, ./img/services/1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/1.png 1x, ./img/services/1@2x.png 2x" type="image/png" />
+										<img src="./img/services/1.png" alt="Встреча гостей" />
+									</picture>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide class="slide-134">
+							<div class="services-item">
+								<div class="services-title">Корпоративы</div>
+								<div class="services-img">
+									<picture>
+										<source srcset="./img/services/2.webp 1x, ./img/services/2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/2.png 1x, ./img/services/2@2x.png 2x" type="image/png" />
+										<img src="./img/services/2.png" alt="Корпоративы" />
+									</picture>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide class="slide-134">
+							<div class="services-item">
+								<div class="services-title">Детские праздники</div>
+								<div class="services-img">
+									<picture>
+										<source srcset="./img/services/3.webp 1x, ./img/services/3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/3.png 1x, ./img/services/3@2x.png 2x" type="image/png" />
+										<img src="./img/services/3.png" alt="Детские праздники" />
+									</picture>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide class="slide-134">
+							<div class="services-item">
+								<div class="services-title">Дни рождения</div>
+								<div class="services-img">
+									<picture>
+										<source srcset="./img/services/4.webp 1x, ./img/services/4@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/4.png 1x, ./img/services/4@2x.png 2x" type="image/png" />
+										<img src="./img/services/4.png" alt="Дни рождения" />
+									</picture>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide class="slide-134">
+							<div class="services-item">
+								<div class="services-title">Шоу на&#160;сцене</div>
+								<div class="services-img">
+									<picture>
+										<source srcset="./img/services/5.webp 1x, ./img/services/5@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/services/5.png 1x, ./img/services/5@2x.png 2x" type="image/png" />
+										<img src="./img/services/5.png" alt="Шоу на сцене" />
+									</picture>
+								</div>
+							</div>
+						</swiper-slide>
+					</swiper-container>
+					<div class="btn-box d-flex justify-content-center">
+						<a class="services-btn d-flex align-items-center justify-content-center">
+							<span>оставить заявку</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<div class="d-md-none d-flex align-items-center justify-content-center">
+				<div class="mob-separator">
+					<svg class="icon icon--star">
+						<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+					</svg>
+				</div>
+			</div>
+			<section id="programs" class="programs">
+				<div class="programs-title container">
+					<h2 class="text-center">ELFShow</h2>
+				</div>
+				<div class="programs-subtitle d-flex align-items-center justify-content-center container">
+					<h4>Программы и&#160;персонажи</h4>
+					<div class="subtitle-star">
+						<svg class="icon icon--star">
+							<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="programs-items d-flex align-items-center justify-content-center flex-wrap">
+					<div class="programs-item">
+						<div class="programs-item_main">
+							<div class="main-inner d-flex align-items-center justify-content-between row">
+								<div class="programs-item_main-button col-3">
+									<svg class="icon icon--plus">
+										<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+									</svg>
+								</div>
+								<div class="programs-item_main-title col-8">
+									<h3 class="text-uppercase text-center">Соло дриады</h3>
+								</div>
+							</div>
+						</div>
+						<div class="programs-item_description">
+							<div class="programs-item_description-title">
+								<p>Танцевальное шоу Дриады с&#160;реквизитом, смена образа</p>
+							</div>
+							<div class="programs-item_description-subtitle d-flex justify-content-between">
+								<span>5 минут</span>
+								<span>от&#160;15 000 рублей</span>
+							</div>
+						</div>
+					</div>
 
-            <div class="services-item">
-                <div class="services-title">Дни рождения</div>
-                <div class="services-img">
-                    <img src="./img/services/4.png" alt="Дни рождения">
-                </div>
-            </div>
+					<div class="programs-item">
+						<div class="programs-item_main">
+							<div class="main-inner d-flex align-items-center justify-content-between">
+								<div class="programs-item_main-button">
+									<svg class="icon icon--plus">
+										<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+									</svg>
+								</div>
+								<div class="programs-item_main-title">
+									<h3 class="text-uppercase">Мыльные пузыри</h3>
+								</div>
+							</div>
+						</div>
+						<div class="programs-item_description">
+							<div class="programs-item_description-title">
+								<p>Мыльные пузыри с&#160;Дриадой</p>
+							</div>
+							<div class="programs-item_description-subtitle d-flex justify-content-between">
+								<span>30 минут</span>
+								<span>от&#160;20 000 рублей</span>
+							</div>
+						</div>
+					</div>
 
-            <div class="services-item">
-                <div class="services-title">Шоу на&#160;сцене</div>
-                <div class="services-img">
-                    <img src="./img/services/5.png" alt="Шоу на сцене">
-                </div>
-            </div>
-        </div>
+					<div class="programs-item">
+						<div class="programs-item_main">
+							<div class="main-inner d-flex align-items-center justify-content-between row">
+								<div class="programs-item_main-button col-3">
+									<svg class="icon icon--plus">
+										<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+									</svg>
+								</div>
+								<div class="programs-item_main-title col-9">
+									<h3 class="text-uppercase text-center">Соло эльфа</h3>
+								</div>
+							</div>
+						</div>
+						<div class="programs-item_description">
+							<div class="programs-item_description-title">
+								<p>Танцевальное соло одного Эльфа, хорелграфия</p>
+							</div>
+							<div class="programs-item_description-subtitle d-flex justify-content-between">
+								<span>3 минуты</span>
+								<span>от&#160;15 000 рублей</span>
+							</div>
+						</div>
+					</div>
 
-        <!-- SWIPER -->
+					<div class="programs-item">
+						<div class="programs-item_main">
+							<div class="main-inner d-flex align-items-center justify-content-between row">
+								<div class="programs-item_main-button col-3">
+									<svg class="icon icon--plus">
+										<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+									</svg>
+								</div>
+								<div class="programs-item_main-title col-9">
+									<h3 class="text-uppercase text-center">Дуэт эльфов</h3>
+								</div>
+							</div>
+						</div>
+						<div class="programs-item_description">
+							<div class="programs-item_description-title">
+								<p>Танцевальный дуэт Эльфов</p>
+							</div>
+							<div class="programs-item_description-subtitle d-flex justify-content-between">
+								<span>5 минут</span>
+								<span>от&#160;30 000 рублей</span>
+							</div>
+						</div>
+					</div>
 
-        <div class="d-md-none d-flex align-items-center justify-content-center">
-    <div class="mob-separator">
-        <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-    </div>
-</div>
-        <swiper-container slides-per-view="auto" loop="true" class="d-md-none d-flex">
-            <swiper-slide class="slide-134">
-                <div class="services-item">
-                <div class="services-title">Встреча гостей</div>
-                <div class="services-img">
-                    <img src="./img/services/1.png" alt="Встреча гостей">
-                </div>
-            </div>
-        </swiper-slide>
-            <swiper-slide class="slide-134">
-                <div class="services-item">
-                <div class="services-title">Корпоративы</div>
-                <div class="services-img">
-                    <img src="./img/services/2.png" alt="Корпоративы">
-                </div>
-            </div>
-        </swiper-slide>
-            <swiper-slide class="slide-134">
-                <div class="services-item">
-                    <div class="services-title">Детские праздники</div>
-                    <div class="services-img">
-                        <img src="./img/services/3.png" alt="Детские праздники">
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide class="slide-134">
-                <div class="services-item">
-                    <div class="services-title">Дни рождения</div>
-                    <div class="services-img">
-                        <img src="./img/services/4.png" alt="Дни рождения">
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide class="slide-134">
-                <div class="services-item">
-                    <div class="services-title">Шоу на&#160;сцене</div>
-                    <div class="services-img">
-                        <img src="./img/services/5.png" alt="Шоу на сцене">
-                    </div>
-                </div>
-            </swiper-slide>
-          </swiper-container>
-         <div class="btn-box d-flex justify-content-center">
-            <a class="services-btn d-flex align-items-center justify-content-center">
-                <span>оставить заявку</span>
-            </a>
-         </div>
-    </div>
-</section>
-    <div class="d-md-none d-flex align-items-center justify-content-center">
-    <div class="mob-separator">
-        <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-    </div>
-</div>
-    <section class="programs">
-    <div class="programs-title container">
-        <h2 class="text-center">ELFShow</h2>
-    </div>
-    <div class="programs-subtitle d-flex align-items-center justify-content-center container">
-        <h4>Программы и&#160;персонажи</h4>
-        <div class="subtitle-star">
-                   <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-        </div>
-    </div>
-    <div class="programs-items d-flex align-items-center justify-content-center flex-wrap">
-        <div class="programs-item">
-            <div class="programs-item_main">
-                <div class="main-inner d-flex align-items-center justify-content-between row">
-                <div class="programs-item_main-button col-3">
-                    <svg class="icon icon--plus">
-                        <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                       </svg>
-                </div>
-                <div class="programs-item_main-title col-8">
-                    <h3 class="text-uppercase text-center">Соло дриады</h3>
-                </div>
-                </div>
-            </div>
-            <div class="programs-item_description">
-                <div class="programs-item_description-title">
-                    <p>Танцевальное шоу Дриады с&#160;реквизитом, смена образа</p>
-                </div>
-                <div class="programs-item_description-subtitle d-flex justify-content-between">
-                    <span>5 минут</span>
-                    <span>от&#160;15 000 рублей</span>
-                </div>
-            </div>
-        </div>
+					<div class="programs-item">
+						<div class="programs-item_main">
+							<div class="main-inner d-flex align-items-center justify-content-between row">
+								<div class="programs-item_main-button col-3">
+									<svg class="icon icon--plus">
+										<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+									</svg>
+								</div>
+								<div class="programs-item_main-title col-9">
+									<h3 class="text-uppercase text-center">Трио</h3>
+								</div>
+							</div>
+						</div>
+						<div class="programs-item_description">
+							<div class="programs-item_description-title">
+								<p>Танцевальное трио</p>
+							</div>
+							<div class="programs-item_description-subtitle d-flex justify-content-between">
+								<span>6 минут</span>
+								<span>от&#160;40 000 рублей</span>
+							</div>
+						</div>
+					</div>
 
-        <div class="programs-item">
-            <div class="programs-item_main">
-                <div class="main-inner d-flex align-items-center justify-content-between">
-                <div class="programs-item_main-button">
-                    <svg class="icon icon--plus">
-                        <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                       </svg>
-                </div>
-                <div class="programs-item_main-title">
-                    <h3 class="text-uppercase">Мыльные пузыри</h3>
-                </div>
-                </div>
-            </div>
-            <div class="programs-item_description">
-                <div class="programs-item_description-title">
-                    <p>Мыльные пузыри с&#160;Дриадой</p>
-                </div>
-                <div class="programs-item_description-subtitle d-flex justify-content-between">
-                    <span>30 минут</span>
-                    <span>от&#160;20 000 рублей</span>
-                </div>
-            </div>
-        </div>
+					<div class="programs-item">
+						<div class="programs-item_main">
+							<div class="main-inner d-flex align-items-center justify-content-between">
+								<div class="programs-item_main-button">
+									<svg class="icon icon--plus">
+										<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+									</svg>
+								</div>
+								<div class="programs-item_main-title">
+									<p>Индивидуальный заказ</p>
+								</div>
+							</div>
+						</div>
+						<div class="programs-item_description">
+							<div class="programs-item_description-title">
+								<p>Постановка номера под заказ</p>
+							</div>
+							<div class="programs-item_description-subtitle d-flex justify-content-end">
+								<span>Цена обсуждается</span>
+							</div>
+						</div>
+					</div>
+					<!-- </div> -->
+				</div>
+			</section>
+			<section class="programs-mobile d-md-none">
+				<div class="title-mobile">
+					<h2 class="text-center">ELFShow</h2>
+				</div>
+				<div class="subtitle-pstar d-flex align-items-center justify-content-center">
+					<svg class="icon icon--star">
+						<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+					</svg>
+				</div>
+				<div class="subtitle-mobile">
+					<h4 class="text-center">Программы и&#160;персонажи</h4>
+				</div>
 
-        <div class="programs-item">
-            <div class="programs-item_main">
-                <div class="main-inner d-flex align-items-center justify-content-between row">
-                <div class="programs-item_main-button col-3">
-                    <svg class="icon icon--plus">
-                        <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                       </svg>
-                </div>
-                <div class="programs-item_main-title col-9">
-                    <h3 class="text-uppercase text-center">Соло эльфа</h3>
-                </div>
-                </div>
-            </div>
-            <div class="programs-item_description">
-                <div class="programs-item_description-title">
-                    <p>Танцевальное соло одного Эльфа, хорелграфия</p>
-                </div>
-                <div class="programs-item_description-subtitle d-flex justify-content-between">
-                    <span>3 минуты</span>
-                    <span>от&#160;15 000 рублей</span>
-                </div>
-            </div>
-        </div>
+				<!-- CARD BLOCK -->
+				<div class="container">
+					<div class="card-items d-flex align-items-center justify-content-center flex-column">
+						<div class="card-item">
+							<div class="card-item_main">
+								<div class="card-inner d-flex align-items-center justify-content-start">
+									<div class="card-item_main-button">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<div class="card-item_main-title">
+										<h3 class="text-uppercase text-center">Соло дриады</h3>
+									</div>
+								</div>
+							</div>
+							<div class="card-item_description">
+								<div class="card-item_description-title">
+									<p>Танцевальное шоу Дриады с&#160;реквизитом, смена образа</p>
+								</div>
+								<div class="card-item_description-subtitle d-flex justify-content-between">
+									<span>5 минут</span>
+									<span>от&#160;15 000 рублей</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-item">
+							<div class="card-item_main">
+								<div class="card-inner d-flex align-items-center justify-content-start">
+									<div class="card-item_main-button">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<div class="card-item_main-title">
+										<h3 class="text-uppercase text-center">Мыльные пузыри</h3>
+									</div>
+								</div>
+							</div>
+							<div class="card-item_description">
+								<div class="card-item_description-title">
+									<p>Мыльные пузыри с&#160;Дриадой</p>
+								</div>
+								<div class="card-item_description-subtitle d-flex justify-content-between pt-3">
+									<span>30 минут</span>
+									<span>от&#160;20 000 рублей</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-item">
+							<div class="card-item_main">
+								<div class="card-inner d-flex align-items-center justify-content-start">
+									<div class="card-item_main-button">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<div class="card-item_main-title">
+										<h3 class="text-uppercase text-center">Соло эльфа</h3>
+									</div>
+								</div>
+							</div>
+							<div class="card-item_description">
+								<div class="card-item_description-title">
+									<p>Танцевальное соло одного Эльфа, хорелграфия</p>
+								</div>
+								<div class="card-item_description-subtitle d-flex justify-content-between">
+									<span>3 минуты</span>
+									<span>от&#160;15 000 рублей</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-item">
+							<div class="card-item_main">
+								<div class="card-inner d-flex align-items-center justify-content-start">
+									<div class="card-item_main-button">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<div class="card-item_main-title">
+										<h3 class="text-uppercase text-center">Дуэт эльфов</h3>
+									</div>
+								</div>
+							</div>
+							<div class="card-item_description">
+								<div class="card-item_description-title">
+									<p>Танцевальный дуэт Эльфов</p>
+								</div>
+								<div class="card-item_description-subtitle d-flex justify-content-between pt-3">
+									<span>5 минут</span>
+									<span>от&#160;30 000 рублей</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-item">
+							<div class="card-item_main">
+								<div class="card-inner d-flex align-items-center justify-content-start">
+									<div class="card-item_main-button">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<div class="card-item_main-title">
+										<h3 class="text-uppercase text-center">Трио</h3>
+									</div>
+								</div>
+							</div>
+							<div class="card-item_description">
+								<div class="card-item_description-title">
+									<p>Танцевальное трио</p>
+								</div>
+								<div class="card-item_description-subtitle d-flex justify-content-between pt-3">
+									<span>6 минут</span>
+									<span>от&#160;40 000 рублей</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-item">
+							<div class="card-item_main">
+								<div class="card-inner d-flex align-items-center justify-content-start">
+									<div class="card-item_main-button">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<div class="card-item_main-title">
+										<h3 class="text-center">Индивидуальный заказ</h3>
+									</div>
+								</div>
+							</div>
+							<div class="card-item_description">
+								<div class="card-item_description-title">
+									<p>Постановка номера под заказ</p>
+								</div>
+								<div class="card-item_description-subtitle d-flex justify-content-end pt-3">
+									<span>Цена обсуждается</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="d-md-none d-flex align-items-center justify-content-center">
+				<div class="mob-separator">
+					<svg class="icon icon--star">
+						<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+					</svg>
+				</div>
+			</div>
+			<section class="steps container">
+				<div class="steps-subtitle mt120-mb60 d-flex align-items-center justify-content-center container">
+					<h4>Как попасть в&#160;сказку?</h4>
+					<div class="subtitle-star d-none d-md-block">
+						<svg class="icon icon--star">
+							<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="steps-items d-flex justify-content-center flex-column flex-md-row align-items-center">
+					<div class="steps-item d-flex align-items-center">
+						<div class="download-desc d-none d-md-block">
+							<a href="#">Скачать договор</a>
+						</div>
+						<div class="steps-item_inner d-flex align-items-center justify-content-start">
+							<div class="mob-separator m-0">
+								<svg class="icon icon--star">
+									<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+								</svg>
+							</div>
+							<p class="num">1</p>
+							<p class="num_decription">Оставляете заявку</p>
+						</div>
+					</div>
+					<div class="steps-item d-flex align-items-center">
+						<div class="steps-item_inner d-flex align-items-center justify-content-start">
+							<div class="mob-separator m-0">
+								<svg class="icon icon--star">
+									<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+								</svg>
+							</div>
+							<p class="num">2</p>
+							<p class="num_decription">С&#160;Вами связываются</p>
+						</div>
+					</div>
+					<div class="steps-item d-flex align-items-center">
+						<div class="steps-item_inner d-flex align-items-center justify-content-start">
+							<div class="mob-separator m-0">
+								<svg class="icon icon--star">
+									<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+								</svg>
+							</div>
+							<p class="num">3</p>
+							<p class="num_decription">Обсуждаем номера и&#160;желания</p>
+						</div>
+					</div>
+					<div class="steps-item d-flex align-items-center">
+						<div class="steps-item_inner d-flex align-items-center justify-content-start">
+							<div class="mob-separator m-0">
+								<svg class="icon icon--star">
+									<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+								</svg>
+							</div>
+							<p class="num">4</p>
+							<p class="num_decription">Подсчет итоговой стоимости</p>
+						</div>
+					</div>
+					<div class="steps-item d-flex align-items-center">
+						<div class="steps-item_inner d-flex align-items-center justify-content-start">
+							<div class="mob-separator m-0">
+								<svg class="icon icon--star">
+									<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+								</svg>
+							</div>
+							<p class="num">5</p>
+							<p class="num_decription">Оформление договора</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps-btn-box d-flex justify-content-center">
+					<a class="steps-btn d-flex align-items-center justify-content-center">
+						<span>оставить заявку</span>
+					</a>
+				</div>
+				<a href="#" class="download-mob d-flex align-items-center justify-content-center d-md-none">Скачать договор</a>
+			</section>
+			<div class="d-md-none d-flex align-items-center justify-content-center">
+				<div class="mob-separator">
+					<svg class="icon icon--star">
+						<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+					</svg>
+				</div>
+			</div>
+			<section class="whyus container d-none d-lg-block">
+				<div class="whyus-subtitle mt200-mb60 align-items-center justify-content-center d-md-flex">
+					<h4>Почему мы?</h4>
+					<div class="subtitle-star d-none d-md-block">
+						<svg class="icon icon--star">
+							<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="whyus-list">
+					<ul class="d-flex align-items-center justify-content-between">
+						<li>Прозрачные цены</li>
+						<li>
+							Дизайнерские <br />
+							костюмы
+						</li>
+						<li>Опыт</li>
+						<li>
+							Ответственность <br />
+							артистов
+						</li>
+						<li class="text-center">
+							Возможность импровизации на&#160;месте,<br />
+							если &#171;что-то пошло не&#160;так&#187;
+						</li>
+					</ul>
+				</div>
+				<div class="whyus-back"></div>
+			</section>
+			<section class="whyus-mobile d-md-none container">
+				<div class="whyus-mobile_title text-center">Почему мы</div>
+				<ul class="whyus-mobile_list">
+					<li>Прозрачные цены</li>
+					<li>Без сюрпризов</li>
+					<li>Возможность импровизации на&#160;месте, если &#171;что-то пошло не&#160;так&#187;</li>
+					<li>
+						Ответственность <br />
+						артистов
+					</li>
+					<li>Опыт</li>
+				</ul>
+			</section>
+			<div class="d-md-none d-flex align-items-center justify-content-center">
+				<div class="mob-separator">
+					<svg class="icon icon--star">
+						<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+					</svg>
+				</div>
+			</div>
+			<section id="galery" class="galery mt-200mb-40">
+				<div class="steps-subtitle d-flex align-items-center justify-content-center container">
+					<h4 class="text-center p-0">Сделай свой праздник ярче вместе с&#160;нами!</h4>
+					<div class="subtitle-star d-none d-lg-block">
+						<svg class="icon icon--star">
+							<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="galery-swiper d-none d-md-block container">
+					<swiper-container slides-per-view="auto" spaseBetween="10" loop="true">
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/1.webp 1x, ./img/galery/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/1.png 1x, ./img/galery/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/2.webp 1x, ./img/galery/2@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/2.png 1x, ./img/galery/2@2x.png 2x" type="image/png" />
+								<img src="./img/galery/2.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/3.webp 1x, ./img/galery/3@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/3.png 1x, ./img/galery/3@2x.png 2x" type="image/png" />
+								<img src="./img/galery/3.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/1.webp 1x, ./img/galery/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/1.png 1x, ./img/galery/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/2.webp 1x, ./img/galery/2@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/2.png 1x, ./img/galery/2@2x.png 2x" type="image/png" />
+								<img src="./img/galery/2.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/3.webp 1x, ./img/galery/3@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/3.png 1x, ./img/galery/3@2x.png 2x" type="image/png" />
+								<img src="./img/galery/3.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/1.webp 1x, ./img/galery/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/1.png 1x, ./img/galery/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/2.webp 1x, ./img/galery/2@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/2.png 1x, ./img/galery/2@2x.png 2x" type="image/png" />
+								<img src="./img/galery/2.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-340"
+							><picture>
+								<source srcset="./img/galery/3.webp 1x, ./img/galery/3@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/3.png 1x, ./img/galery/3@2x.png 2x" type="image/png" />
+								<img src="./img/galery/3.png" alt="" /> </picture
+						></swiper-slide>
+					</swiper-container>
+				</div>
 
-        <div class="programs-item">
-            <div class="programs-item_main">
-                <div class="main-inner d-flex align-items-center justify-content-between row">
-                <div class="programs-item_main-button col-3">
-                    <svg class="icon icon--plus">
-                        <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                       </svg>
-                </div>
-                <div class="programs-item_main-title col-9">
-                    <h3 class="text-uppercase text-center">Дуэт эльфов</h3>
-                </div>
-                </div>
-            </div>
-            <div class="programs-item_description">
-                <div class="programs-item_description-title">
-                    <p>Танцевальный дуэт Эльфов</p>
-                </div>
-                <div class="programs-item_description-subtitle d-flex justify-content-between">
-                    <span>5 минут</span>
-                    <span>от&#160;30 000 рублей</span>
-                </div>
-            </div>
-        </div>
+				<!-- SWIPER MOBILE -->
+				<div class="galery-swiper d-md-none">
+					<swiper-container slides-per-view="auto" spaseBetween="10" loop="true">
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+						<swiper-slide class="slide-166"
+							><picture>
+								<source srcset="./img/galery/g_mobile/1.webp 1x, ./img/galery/g_mobile/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/galery/g_mobile/1.png 1x, ./img/galery/g_mobile/1@2x.png 2x" type="image/png" />
+								<img src="./img/galery/g_mobile/1.png" alt="" /> </picture
+						></swiper-slide>
+					</swiper-container>
+				</div>
+				<div class="last-star d-none d-md-block">
+					<svg class="icon icon--star">
+						<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+					</svg>
+				</div>
+			</section>
+			<div class="d-md-none d-flex align-items-center justify-content-center">
+				<div class="mob-separator">
+					<svg class="icon icon--star">
+						<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+					</svg>
+				</div>
+			</div>
+		</main>
 
-        <div class="programs-item">
-            <div class="programs-item_main">
-                <div class="main-inner d-flex align-items-center justify-content-between row">
-                <div class="programs-item_main-button col-3">
-                    <svg class="icon icon--plus">
-                        <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                       </svg>
-                </div>
-                <div class="programs-item_main-title col-9">
-                    <h3 class="text-uppercase text-center">Трио</h3>
-                </div>
-                </div>
-            </div>
-            <div class="programs-item_description">
-                <div class="programs-item_description-title">
-                    <p>Танцевальное трио</p>
-                </div>
-                <div class="programs-item_description-subtitle d-flex justify-content-between">
-                    <span>6 минут</span>
-                    <span>от&#160;40 000 рублей</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="programs-item">
-            <div class="programs-item_main">
-                <div class="main-inner d-flex align-items-center justify-content-between">
-                <div class="programs-item_main-button">
-                    <svg class="icon icon--plus">
-                        <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                       </svg>
-                </div>
-                <div class="programs-item_main-title">
-                    <p>Индивидуальный заказ</p>
-                </div>
-                </div>
-            </div>
-            <div class="programs-item_description">
-                <div class="programs-item_description-title">
-                    <p>Постановка номера под заказ</p>
-                </div>
-                <div class="programs-item_description-subtitle d-flex justify-content-end">
-                    <span>Цена обсуждается</span>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</section>
-    <section class="programs-mobile d-md-none">
-    <div class="title-mobile">
-        <h2 class="text-center">ELFShow</h2>
-    </div>
-    <div class="subtitle-pstar d-flex align-items-center justify-content-center">
-        <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-    </div>
-    <div class="subtitle-mobile">
-        <h4 class="text-center">Программы и&#160;персонажи</h4>
-    </div>
-
-    <!-- CARD BLOCK -->
-    <div class="container">
-        <div class="card-items d-flex align-items-center justify-content-center flex-column">
-            <div class="card-item">
-                <div class="card-item_main">
-                    <div class="card-inner d-flex align-items-center justify-content-start">
-                    <div class="card-item_main-button">
-                        <svg class="icon icon--plus">
-                            <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                           </svg>
-                    </div>
-                    <div class="card-item_main-title">
-                        <h3 class="text-uppercase text-center">Соло дриады</h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-item_description">
-                    <div class="card-item_description-title">
-                        <p>Танцевальное шоу Дриады с&#160;реквизитом, смена образа</p>
-                    </div>
-                    <div class="card-item_description-subtitle d-flex justify-content-between">
-                        <span>5 минут</span>
-                        <span>от&#160;15 000 рублей</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-item">
-                <div class="card-item_main">
-                    <div class="card-inner d-flex align-items-center justify-content-start">
-                    <div class="card-item_main-button">
-                        <svg class="icon icon--plus">
-                            <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                           </svg>
-                    </div>
-                    <div class="card-item_main-title">
-                        <h3 class="text-uppercase text-center">Мыльные пузыри</h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-item_description">
-                    <div class="card-item_description-title">
-                        <p>Мыльные пузыри с&#160;Дриадой</p>
-                    </div>
-                    <div class="card-item_description-subtitle d-flex justify-content-between pt-3">
-                        <span>30 минут</span>
-                        <span>от&#160;20 000 рублей</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-item">
-                <div class="card-item_main">
-                    <div class="card-inner d-flex align-items-center justify-content-start">
-                    <div class="card-item_main-button">
-                        <svg class="icon icon--plus">
-                            <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                           </svg>
-                    </div>
-                    <div class="card-item_main-title">
-                        <h3 class="text-uppercase text-center">Соло эльфа</h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-item_description">
-                    <div class="card-item_description-title">
-                        <p>Танцевальное соло одного Эльфа, хорелграфия</p>
-                    </div>
-                    <div class="card-item_description-subtitle d-flex justify-content-between">
-                        <span>3 минуты</span>
-                        <span>от&#160;15 000 рублей</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-item">
-                <div class="card-item_main">
-                    <div class="card-inner d-flex align-items-center justify-content-start">
-                    <div class="card-item_main-button">
-                        <svg class="icon icon--plus">
-                            <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                           </svg>
-                    </div>
-                    <div class="card-item_main-title">
-                        <h3 class="text-uppercase text-center">Дуэт эльфов</h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-item_description">
-                    <div class="card-item_description-title">
-                        <p>Танцевальный дуэт Эльфов</p>
-                    </div>
-                    <div class="card-item_description-subtitle d-flex justify-content-between pt-3">
-                        <span>5 минут</span>
-                        <span>от&#160;30 000 рублей</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-item">
-                <div class="card-item_main">
-                    <div class="card-inner d-flex align-items-center justify-content-start">
-                    <div class="card-item_main-button">
-                        <svg class="icon icon--plus">
-                            <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                           </svg>
-                    </div>
-                    <div class="card-item_main-title">
-                        <h3 class="text-uppercase text-center">Трио</h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-item_description">
-                    <div class="card-item_description-title">
-                        <p>Танцевальное трио</p>
-                    </div>
-                    <div class="card-item_description-subtitle d-flex justify-content-between pt-3">
-                        <span>6 минут</span>
-                        <span>от&#160;40 000 рублей</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-item">
-                <div class="card-item_main">
-                    <div class="card-inner d-flex align-items-center justify-content-start">
-                    <div class="card-item_main-button">
-                        <svg class="icon icon--plus">
-                            <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
-                           </svg>
-                    </div>
-                    <div class="card-item_main-title">
-                        <h3 class="text-center">Индивидуальный заказ</h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-item_description">
-                    <div class="card-item_description-title">
-                        <p>Постановка номера под заказ</p>
-                    </div>
-                    <div class="card-item_description-subtitle d-flex justify-content-end pt-3">
-
-                        <span>Цена обсуждается</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <div class="d-md-none d-flex align-items-center justify-content-center">
-    <div class="mob-separator">
-        <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-    </div>
-</div>
-    <section class="steps container">
-    <div class="steps-subtitle mt120-mb60 d-flex align-items-center justify-content-center container">
-        <h4>Как попасть в&#160;сказку?</h4>
-        <div class="subtitle-star d-none d-md-block">
-                   <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-        </div>
-    </div>
-    <div class="steps-items d-flex justify-content-center flex-column flex-md-row align-items-center">
-        <div class="steps-item d-flex align-items-center">
-            <div class="download-desc d-none d-md-block">
-                <a href="#">Скачать договор</a>
-            </div>
-            <div class="steps-item_inner d-flex align-items-center justify-content-start">
-                <div class="mob-separator m-0">
-                    <svg class="icon icon--star">
-                        <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-                    </svg>
-                </div>
-                <p class="num">1</p>
-                <p class="num_decription">Оставляете заявку</p>
-            </div>
-
-        </div>
-        <div class="steps-item d-flex align-items-center">
-            <div class="steps-item_inner d-flex align-items-center justify-content-start">
-                <div class="mob-separator m-0">
-                    <svg class="icon icon--star">
-                        <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-                    </svg>
-                </div>
-                <p class="num">2</p>
-                <p class="num_decription">С&#160;Вами связываются</p>
-            </div>
-        </div>
-        <div class="steps-item d-flex align-items-center">
-            <div class="steps-item_inner d-flex align-items-center justify-content-start">
-                <div class="mob-separator m-0">
-                    <svg class="icon icon--star">
-                        <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-                    </svg>
-                </div>
-                <p class="num">3</p>
-                <p class="num_decription">Обсуждаем номера и&#160;желания</p>
-            </div>
-        </div>
-        <div class="steps-item d-flex align-items-center">
-            <div class="steps-item_inner d-flex align-items-center justify-content-start">
-                <div class="mob-separator m-0">
-                    <svg class="icon icon--star">
-                        <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-                    </svg>
-                </div>
-                <p class="num">4</p>
-                <p class="num_decription">Подсчет итоговой стоимости</p>
-            </div>
-        </div>
-        <div class="steps-item d-flex align-items-center">
-            <div class="steps-item_inner d-flex align-items-center justify-content-start">
-                <div class="mob-separator m-0">
-                    <svg class="icon icon--star">
-                        <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-                    </svg>
-                </div>
-                <p class="num">5</p>
-                <p class="num_decription">Оформление договора</p>
-            </div>
-        </div>
-    </div>
-    <div class="steps-btn-box d-flex justify-content-center">
-        <a class="steps-btn d-flex align-items-center justify-content-center">
-            <span>оставить заявку</span>
-        </a>
-     </div>
-     <a href="#" class="download-mob d-flex align-items-center justify-content-center d-md-none">Скачать договор</a>
-</section>
-    <div class="d-md-none d-flex align-items-center justify-content-center">
-    <div class="mob-separator">
-        <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-    </div>
-</div>
-    <section class="whyus container d-none d-lg-block">
-    <div class="whyus-subtitle mt200-mb60 align-items-center justify-content-center d-md-flex">
-        <h4>Почему мы?</h4>
-        <div class="subtitle-star d-none d-md-block">
-                   <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-        </div>
-    </div>
-    <div class="whyus-list">
-        <ul class="d-flex align-items-center justify-content-between">
-            <li>Прозрачные цены</li>
-            <li>Дизайнерские <br> костюмы</li>
-            <li>Опыт</li>
-            <li>Ответственность <br> артистов</li>
-            <li class="text-center">Возможность импровизации на&#160;месте,<br> если &#171;что-то пошло не&#160;так&#187;</li>
-        </ul>
-    </div>
-    <div class="whyus-back">
-    </div>
-</section>
-<section class="whyus-mobile d-md-none container">
-    <div class="whyus-mobile_title text-center">Почему мы</div>
-    <ul class="whyus-mobile_list">
-        <li>Прозрачные цены</li>
-        <li>Без сюрпризов</li>
-        <li>Возможность импровизации на&#160;месте, если &#171;что-то пошло не&#160;так&#187;</li>
-        <li>Ответственность <br> артистов</li>
-        <li>Опыт</li>
-    </ul>
-
-</section>
-    <div class="d-md-none d-flex align-items-center justify-content-center">
-    <div class="mob-separator">
-        <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-    </div>
-</div>
-    <section class="galery mt-200mb-40">
-    <div class="steps-subtitle d-flex align-items-center justify-content-center container">
-        <h4 class="text-center p-0">Сделай свой праздник ярче вместе с&#160;нами!</h4>
-        <div class="subtitle-star d-none d-lg-block">
-                   <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-        </div>
-    </div>
-    <div class="galery-swiper d-none d-md-block container">
-           <swiper-container 
-           slides-per-view="auto" 
-           spaseBetween="10" 
-           
-           loop="true" 
-            >
-        <swiper-slide class="slide-340"><img src="./img/galery/1.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/2.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/3.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/1.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/2.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/3.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/1.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/2.png" alt=""></swiper-slide>
-        <swiper-slide class="slide-340"><img src="./img/galery/3.png" alt=""></swiper-slide>
-    </swiper-container>
-    </div>
-
-    <!-- SWIPER MOBILE -->
-    <div class="galery-swiper d-md-none">
-        <swiper-container 
-        slides-per-view="auto" 
-        spaseBetween="10" 
-        
-        loop="true" 
-         >
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
-     <swiper-slide class="slide-166"><img src="./img/galery/g_mobile/1.png" alt=""></swiper-slide>
- </swiper-container>
- </div>
- <div class="last-star d-none d-md-block">
-    <svg class="icon icon--star">
-<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-</svg>
-</section>
-    <div class="d-md-none d-flex align-items-center justify-content-center">
-    <div class="mob-separator">
-        <svg class="icon icon--star">
-            <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-        </svg>
-    </div>
-</div>
-
-    </main>
-
-    <footer class="footer">
-    <div class="container">
-        <div class="footer-inner 
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div
+					class="footer-inner 
 		flex-wrap 
 		flex-xl-nowrap 
 		d-flex 
 		align-items-center 
 		justify-content-sm-between justify-content-center"
-		>
-        <div class="form-box">
-        <form class="custom-form d-flex flex-column flex-md-row">
-            <input type="text" name="name" placeholder="Имя">
-            <input type="email" name="email" placeholder="Почта">
-            <input type="tel" name="phone" placeholder="Телефон">
-        </form>
-        <div>
-            <button class="form-btn
+				>
+					<div class="form-box">
+						<form class="custom-form d-flex flex-column flex-md-row">
+							<input type="text" name="name" placeholder="Имя" />
+							<input type="email" name="email" placeholder="Почта" />
+							<input type="tel" name="phone" placeholder="Телефон" />
+						</form>
+						<div class="d-flex align-items-center justify-content-center">
+							<button
+								class="form-btn
 			 d-flex 
 			 align-items-center 
-			 justify-content-center" 
-			 type="submit">Оставить заявку</button>
-        </div>
-        <p class="text-center">Москва</p>
-        </div>
-            <div class="icons-none">
-                        <div class="icons-wrapper mt-2 align-items-center">
-            <a href="https://facebook.com" target="_blank">
-                <svg class="icon icon--instagram">
-                 <use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
-                </svg>
-            </a>
-            <a href="https://facebook.com" target="_blank">
-                <svg class="icon icon--whatsup">
-                 <use href="./img/svgsprite/sprite.symbol.svg#whatsup"></use>
-                </svg>
-            </a>
-            <a href="https://facebook.com" target="_blank">
-                <svg class="icon icon--telegram">
-                 <use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
-                </svg>
-            </a>
-        </div>
-            </div>
+			 justify-content-center"
+								type="submit"
+							>
+								Оставить заявку
+							</button>
+						</div>
+						<p class="text-center">Москва</p>
+					</div>
+					<div class="icons-none">
+						<div class="icons-wrapper mt-2 align-items-center">
+							<a href="https://facebook.com" target="_blank">
+								<svg class="icon icon--instagram">
+									<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+								</svg>
+							</a>
+							<a href="https://facebook.com" target="_blank">
+								<svg class="icon icon--whatsup">
+									<use href="./img/svgsprite/sprite.symbol.svg#whatsup"></use>
+								</svg>
+							</a>
+							<a href="https://facebook.com" target="_blank">
+								<svg class="icon icon--telegram">
+									<use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
 
-        <ul class="footer-links ">
-            <li><a href="#">Мероприятия</a></li>
-            <li><a href="#">Программы и&#160;персонажи</a></li>
-            <li><a href="#">Сотрудничество</a></li>
-            <li><a href="#">Галерея</a></li>
-        </ul>
-        </div>
-    </div>
-</footer>
+					<ul class="footer-links ">
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Программы и&#160;персонажи</a></li>
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Галерея</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 
-    <script src="./js/index.bundle.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-</body>
-
+		<script src="./js/index.bundle.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+	</body>
 </html>

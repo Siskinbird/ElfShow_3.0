@@ -21,9 +21,10 @@
 }
 
 .hero-title {
+    font-size: 120px !important;
     @include media-breakpoint-down(md) { 
         text-align: center;
-        font-size: 50px;
+        font-size: 50px !important;
     }
 }
 .hero-subtitle {
