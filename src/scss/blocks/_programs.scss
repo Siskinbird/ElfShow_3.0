@@ -1,9 +1,10 @@
 .programs {
     margin-top: 200px;
     &-item{
-       margin-right: 10px;
-       margin-bottom: 80px;
-       &:last-child {
+        //position: relative;
+        margin-right: 10px;
+        margin-bottom: 80px;
+        &:last-child {
         margin-left: 0;
         //margin-bottom: 0;
        }
@@ -105,4 +106,38 @@ background: url('../../img/programs/666.png')  0 0/cover no-repeat;
         font-weight: lighter;
         opacity: 0.5;
     }
+}
+
+.program-item_expand{
+    //display: none;
+    position: relative;
+    top: 92px;
+    left: -8px;
+    border-radius: 15px;
+    min-width: 495px !important;
+    height: 357px;
+    background-color:rgb(219, 132, 233, 0.4);
+    backdrop-filter: blur(5px);
+    &-inner {
+        font-size: 24px;
+        //padding: 90px 40px;
+        line-height: 112%;
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    //display: flex;
+    opacity: 1;
+}
+
+
+
+#two .program-item_expand-inner{
+    padding-top: 20px;
 }
