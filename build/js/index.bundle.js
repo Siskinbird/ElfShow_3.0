@@ -1,1 +1,1 @@
-!function(){"use strict";var e,t;e=document.querySelector(".toggle-menu"),t=document.querySelector(".nav-bar"),e.addEventListener("click",(function(){t.classList.toggle("toggle")}))}();
+!function(){"use strict";var e,t;e=document.querySelector(".toggle-menu"),t=document.querySelector(".nav-bar"),e.addEventListener("click",(function(){t.classList.toggle("toggle")})),document.getElementById("programs"),document.querySelectorAll(".programs-item_main-button").forEach(((e,t)=>{e.addEventListener("click",(()=>{console.log(`Индекс кликнутого элемента:${t}`)}))}))}();
