@@ -1,6 +1,5 @@
 .nav-bar {
-	position: absolute;
-	// position: fixed;
+	position: fixed;
 	background: $bg-gradient;
 	top: -135px; 
 	// top:0;
@@ -10,6 +9,7 @@
 	display: none;
 	align-items: center;
 	transition: position 2.9s;
+	z-index: 420;
 	-webkit-transition: position 2.9s;
 	-moz-transition: position 2.9s;
 	-ms-transition: position 2.9s;

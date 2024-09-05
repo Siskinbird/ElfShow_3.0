@@ -264,15 +264,15 @@ gulp.task('html:dev', function () {
 				],
 			})
 		)
-		.pipe(
-			webpHTML({
-				extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-				retina: {
-					1: '',
-					2: '@2x',
-				},
-			})
-		)
+		// .pipe(
+		// 	webpHTML({
+		// 		extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+		// 		retina: {
+		// 			1: '',
+		// 			2: '@2x',
+		// 		},
+		// 	})
+		// )
 		.pipe(
 			prettier({
 				tabWidth: 4,
@@ -308,13 +308,13 @@ gulp.task('images:dev', function () {
 		gulp
 			.src(['./src/img/**/*', '!./src/img/svgicons/**/*'])
 			.pipe(changed('./build/img/'))
-			.pipe(
-				imagemin([
-					imageminWebp({
-						quality: 85,
-					}),
-				])
-			)
+			// .pipe(
+			// 	imagemin([
+			// 		imageminWebp({
+			// 			quality: 85,
+			// 		}),
+			// 	])
+			// )
 			.pipe(rename({ extname: '.webp' }))
 			.pipe(gulp.dest('./build/img/'))
 			.pipe(gulp.src(['./src/img/**/*', '!./src/img/svgicons/**/*']))

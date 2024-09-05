@@ -1,5 +1,5 @@
 .hero {
-    background: url("/img/hero.png") 0 0/cover no-repeat;
+    background: url("../img/hero.png") 0 0/cover no-repeat;
     &-inner {
         &-content {
             margin-top: 177px;
@@ -15,13 +15,13 @@
         }
     }
     @include media-breakpoint-down(md) {
-        background: url("/img/hero_mobile.png") 0 0/cover no-repeat;
+        background: url("../img/hero_mobile.png") 0 0/cover no-repeat;
     }
 
 }
 
 .hero-title {
-    font-size: 120px !important;
+    font-size: 120px;
     @include media-breakpoint-down(md) { 
         text-align: center;
         font-size: 50px !important;
@@ -35,7 +35,7 @@
 }
 .make {
 
-           @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(md) {
         margin-top: 250px;
         text-align: center;
         font-size: 16px;
@@ -114,5 +114,16 @@
     }
     @include media-breakpoint-down(md) {
         margin-bottom: 30px;
+    }
+}
+
+.hero-description {
+    h3{
+        margin-top: 30px;
+        font-size: 24px;
+        @include media-breakpoint-down(md) {
+            margin-top: 250px !important;
+            font-size: 16px;
+        }
     }
 }

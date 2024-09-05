@@ -88,25 +88,60 @@
 // BACKGROUNDS
 
 .card-item:nth-child(1) .card-item_main {
-    background: url('../../img/programs/programs-mobile/1.png')  0 0/cover no-repeat;;
+    background: url('../img/programs/programs-mobile/1.png')  0 0/cover no-repeat;;
 }
 
 .card-item:nth-child(2) .card-item_main {
-    background: url('../../img/programs/programs-mobile/2.png')  0 0/cover no-repeat;;
+    background: url('../img/programs/programs-mobile/2.png')  0 0/cover no-repeat;;
 }
 
 .card-item:nth-child(3) .card-item_main {
-    background: url('../../img/programs/programs-mobile/3.png')  0 0/cover no-repeat;;
+    background: url('../img/programs/programs-mobile/3.png')  0 0/cover no-repeat;;
 }
 
 .card-item:nth-child(4) .card-item_main {
-    background: url('../../img/programs/programs-mobile/4.png')  0 0/cover no-repeat;;
+    background: url('../img/programs/programs-mobile/4.png')  0 0/cover no-repeat;;
 }
 
 .card-item:nth-child(5) .card-item_main {
-    background: url('../../img/programs/programs-mobile/5.png')  0 0/cover no-repeat;;
+    background: url('../img/programs/programs-mobile/5.png')  0 0/cover no-repeat;;
 }
 
 .card-item:nth-child(6) .card-item_main {
-    background: url('../../img/programs/programs-mobile/6.png')  0 0/cover no-repeat;;
+    background: url('../img/programs/programs-mobile/6.png')  0 0/cover no-repeat;;
+}
+
+
+
+// MOBILE INNER
+
+.card-item_expand{
+    padding: 8px;
+    position: relative;
+    top: 2px;
+    right: -10px;
+    border-radius: 15px;
+    width: 220px !important;
+    height: 152px;
+    background-color:rgb(219, 132, 233, 0.4);
+    backdrop-filter: blur(5px);
+    &-inner {
+        font-size: 14px;
+        //padding: 90px 40px;
+        line-height: 112%;
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#two_m .card-item_expand-inner{
+    padding-top: 20px;
+}
+
+#three_m .card-item_expand-inner{
+    padding-top: 20px;
 }

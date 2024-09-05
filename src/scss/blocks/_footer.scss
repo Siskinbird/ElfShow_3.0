@@ -67,15 +67,24 @@
     border-radius: 5px;
     height: 40px;
     width: 678px;
+	transition: all .5s;
+	&:hover {
+		//border:  1px solid #F1DFF6;
+		background-color: #F1DFF6;
+		span {
+			transition: all .5s;
+			color: $base-blue;
+		}
+	}
 	@include media-breakpoint-down(lg) {
 		width: 240px;
 		font-size: 14px;
 	}
 }
 
-.custom-form button:hover {
-    background-color: #0056b3;
-}
+// .custom-form button:hover {
+//     background-color: #0056b3;
+// }
 
 .footer-links {
 	font-size: 16px;
@@ -86,7 +95,7 @@
 			color: $base-white;
 			transition: all ease-in .3s;
 			&:hover {
-				color: $base-blue;
+				color: $base-pink;
 			}
 		}
 		padding-top: 24px;

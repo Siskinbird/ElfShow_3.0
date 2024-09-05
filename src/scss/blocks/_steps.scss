@@ -108,10 +108,10 @@
     height: 68px;  
 
     background-color: $base-pink;    
-    border: 1px solid $base-pink;
     border-radius: 10px;   
 
     transition: all .3s ease-in-out;
+    cursor: pointer;
 
     @include media-breakpoint-down(md) {
     width: 240px;

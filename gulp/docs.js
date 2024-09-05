@@ -88,10 +88,10 @@ gulp.task('html:docs', function () {
 			.pipe(
 				webpHTML({
 					extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-					retina: {
-						1: '',
-						2: '@2x',
-					},
+					// retina: {
+					// 	1: '',
+					// 	2: '@2x',
+					// },
 				})
 			)
 			.pipe(htmlclean())
