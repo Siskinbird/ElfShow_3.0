@@ -16,5 +16,7 @@
    $subject = "=?utf-8?B?".base64_encode("Сообщение с сайта elfshow.ru")."?=";
    $headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
 
-   $success = mail('show.elfproject@gmail.com', $subject, $message, $headers);
+   $success = mail('frontend.4u@ya.ru', $subject, $message, $headers);
    echo $success;
+
+//    show.elfproject@gmail.com

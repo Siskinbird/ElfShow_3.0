@@ -810,13 +810,14 @@
 		justify-content-sm-between justify-content-center"
 				>
 					<div class="form-box">
-						<form class="custom-form d-flex flex-column flex-md-row">
-							<input type="text" name="name" placeholder="Имя" />
-							<input type="email" name="email" placeholder="Почта" />
-							<input type="tel" name="phone" placeholder="Телефон" />
+						<form id="sendForm" action="../../mail.php" method="POST" class="custom-form d-flex flex-column flex-md-row">
+							<input type="text" name="name" id="formName" placeholder="Имя" />
+							<input type="email" name="email" id="formEmail" placeholder="Почта" />
+							<input type="tel" name="phone" id="formPhone" placeholder="Телефон" />
 						</form>
 						<div class="d-flex align-items-center justify-content-center">
-							<div
+							<button
+								form="sendForm"
 								class="form-btn
 			 d-flex 
 			 align-items-center 
@@ -824,7 +825,7 @@
 								type="submit"
 							>
 								<span>Оставить заявку</span>
-							</div>
+							</button>
 						</div>
 						<p class="text-center">Москва</p>
 					</div>
